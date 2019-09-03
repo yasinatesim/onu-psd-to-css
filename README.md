@@ -1,5 +1,5 @@
 <p align="center">    
-<img src="https://yasinates.com/onu-psd-to-css-logo.png">    
+<img src="https://yasinatesim.github.io/onu-psd-to-css/img/logo.png">   
 </p>    
 <h2 align="center">Onu PSD to CSS Template</h2>
 
