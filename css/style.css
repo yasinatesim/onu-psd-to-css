@@ -1,0 +1,448 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/*
+=============================
+
+        GENERAL STYLES
+
+=============================
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+=============================
+
+        HEADER STYLES
+
+=============================
+*/
+
+.navbar-nav {
+    margin-top: 50px;
+}
+.navbar-default .navbar-toggle {
+    margin-top: 50px;
+	background-color: #8BCE8B;
+
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background-color: #8BCE8B;
+}
+.navbar-default {
+     background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #8bce82;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color:#fff;
+}
+
+/*
+=============================
+
+        SLIDER STYLES
+
+=============================
+*/
+
+section.slider {
+    background: url("../img/slider.jpg") no-repeat; 
+}
+.slider-opacity {
+    background: rgba(0,0,0,.3);
+}
+section.slider .item {
+    padding: 200px 0 100px 0;
+    color: #fff;
+}
+section.slider .item h3 {
+    font-size: 40px;
+}
+section.slider .item h2 {
+    font-size: 100px;
+    border: 3px solid #fff;
+    display: inline-block;
+    padding: 35px;
+}
+section.slider .item h2 span {
+    color: #8bce82;
+}
+section.slider .item h4 {
+    font-size: 36px;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background-color: #87d37c;
+    border: 1px solid #87d37c;
+}
+.carousel-indicators li {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+}
+.menubg {
+    background: #90ee90;
+    transition: 500ms;
+}
+
+/*
+=============================
+
+        ABOUTUS STYLES
+
+=============================
+*/
+
+section.aboutus h4:first-child,section.services h4,section.ourpricing h4,section.portfolio h4{
+    font-size: 36px;
+    padding: 45px 0 15px 0;
+    font-weight: 700;
+}
+section.aboutus p,section.services p,section.portfolio p,section.ourpricing p {
+    max-width: 630px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+section.aboutus .about-icon i {
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+section.aboutus .about-icon h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+section.aboutus .about-icon p {
+    font-size: 14px;
+    max-width: 250px;
+    padding-bottom: 120px;
+ }
+section.aboutus .about-icon:hover i ,section.aboutus .about-icon:hover h4{
+    color: #87d37c;
+}
+
+/*
+=============================
+
+        SERVICES STYLES
+
+=============================
+*/
+
+section.services  {
+    background: #e1e1e1;
+    padding: 90px 0;
+}
+section.services .about-icon {
+    position: relative;
+    overflow: hidden;
+}
+section.services .about-icon img{
+    width: 100%;
+}
+section.services div.services-opacity {
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:-100%;
+    transition: 500ms;
+}
+section.services .about-icon:hover div.services-opacity {
+    top:0;
+}
+section.services .about-icon .social{
+    position: absolute;
+    left: 35%;
+    bottom:-100%;
+    transition: 500ms;
+}
+section.services .about-icon .social i {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+}
+section.services .about-icon .social i:hover {
+    background: #87d37c;
+    border: 1px solid #87d37c;
+}
+section.services .about-icon:hover .social  {
+   bottom: 40%;
+}
+
+/*
+=============================
+
+        PORTFOLIO STYLES
+
+=============================
+*/
+
+section.portfolio {
+    padding: 170px 0;
+}
+/*
+=============================
+
+       >>> ISOTOP STYLES
+
+=============================
+*/
+.element-item {
+    width: 33%;
+    overflow: hidden;
+    border:10px solid #fff;
+}
+.element-item:hover .portfolio-opacity{
+    top:0;
+}
+.element-item:hover .portfolio-content {
+    bottom: 24%;
+    left:10%;
+    cursor: pointer;
+}
+.element-item img{
+    width: 100%;
+}
+.element-item .portfolio-opacity {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    top: -100%;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.portfolio-content {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    bottom: -100%;
+    /*left:100%;*/
+    font-size: 30px;
+    color: #87d37c;
+    font-weight: 700;
+    transition: 500ms;
+}
+
+    /* ---- button ---- */
+
+    .button {
+        margin-right: 15px;
+        padding: 0.5em 1.0em;
+        font-size: 14px;
+        cursor: pointer;
+        background: #000;
+        color: #fff;
+    }
+    .button:hover {
+        background-color: #87d37c;
+        color: #fff;
+    }
+
+    .button:active,
+    .button.is-checked {
+        background-color: #87d37c;
+    }
+
+    .button.is-checked {
+        color: white;
+    }
+
+
+
+    /* ---- button-group ---- */
+
+    .button-group {
+        margin-bottom: 60px;
+    }
+
+/*
+=============================
+
+        OURPRICING STYLES
+
+=============================
+*/
+
+div.pricing {
+    background: #39393a;
+    padding: 15px 0;
+    color:#fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 500ms;
+    margin: 105px 0 85px 0;
+}
+div.pricing div.pricing-top {
+    border:5px solid #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 30px;
+}
+div.pricing div.pricing-top p {
+    font-size: 15px;
+}
+
+div.pricing div.pricing-top p sup {
+    font-size: 15px;
+    font-weight: 700;
+    top: -15px;
+}
+
+div.pricing div.pricing-top p em {
+    font-size: 30px;
+}
+
+div.pricing div.pricing-top p span {
+    position: relative;
+    top: 3px;
+    left: 10px;
+    font-size: 20px;
+}
+div.pricing div.pricing-content {
+    margin-top: 30px;
+}
+div.pricing div.pricing-content ul li {
+    margin: 0 auto 20px auto;
+    font-size: 14px;
+    width: 130px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+div.pricing div.pricing-content .btn {
+    background: #fff;
+    color: #39393a;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+div.pricing:hover {
+    background: #87d37c;
+}
+div.pricing:hover div.pricing-top,div.pricing:hover div.pricing-content .btn {
+    background: #fff;
+    color: #87d37c;
+}
+
+/*
+=============================
+
+        COUNTER-UP STYLES
+
+=============================
+*/
+
+/*
+*** Counter-Up Image Properties ***
+>> Opacity: 30%
+*/
+
+.counter-up {
+    background: url("../img/counter-up.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.counter-up .counter-up-content {
+     padding-top: 100px;
+     padding-bottom: 97px;
+ }
+.counter-up .counter-up-content .count {
+    border: 1px solid #7f816c;
+    color: #fff;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, .7);
+}
+.counter-up .counter-up-content .count span {
+    font-size: 30px;
+    font-weight: 700;
+}
+.counter-up .counter-up-content .count h3 {
+    font-size: 18px;
+}
+
+/*
+=============================
+
+        CONTACT-US STYLES
+
+=============================
+*/
+.margin-top60 {
+    margin-top: 60px;
+}
+.contact-us .about-icon h4 {
+    font-size: 18px;
+}
+.contact-us .about-icon p {
+    font-size: 12px;
+}
+
+/** Contact Form **/
+.contact-us .contact-form {
+    background: #f5f5f5;
+    padding-top: 130px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+.contact-us .contact-form .form-control {
+    margin-bottom: 20px;
+    padding: 25px 12px;
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.contact-us .contact-form .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.contact-us .contact-form .textarea {
+    padding: 35px 25px;
+}
+.contact-us .contact-form .btn {
+    padding: 10px 25px;
+    color: #fff;
+    background: #87d37c;
+    font-weight: 700;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*
+=============================
+
+        FOOTER STYLES
+
+=============================
+*/
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+footer .footer-icon i{
+    margin-right: 5px;
+}
+footer .footer-icon i:hover{
+    color: #87d37c;
+}
